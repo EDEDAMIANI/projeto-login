@@ -28,25 +28,81 @@ section#login{
     transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
+    width: 380px;
     height: 500px;
-    width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
-
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 
 }    
-    section#login > div#imagem {
-        display: block;
-        background: #5f2c82 url(../Imagens/pexels-gdtography-277628-911758.jpg) no-repeat;
-        background-size: cover;
-        height: 200px;
-    }
-    section#login > div#formulario{
-        display: block;
-        padding: 10px;
+section#login > div#imagem {
+    background: #5f2c82 url(../Imagens/pexels-gdtography-277628-911758.jpg) no-repeat;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    
+    
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
 
-    } 
+} 
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#formulario > p {
+    font-size: 0.8em;
+}
+form div.campo{
+    background-color:#5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 7px;
+}
+/*com o comando abaixo escondi o label, nomenclaturas de login e senha*/
+div.campo > label{
+    display: none;
+}
+
+form  input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color:white;
+    background-color:#49a09d;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+form input[type=submit]:hover {
+    background-color: #2d6462;
+}
+
+form  a.botao {
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    border: 1px solid #67c4c1;
+    color:#214645 ;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+
+}
+form a.botao:hover {
+    background-color:#2d6462;
+    color: white;}
 
 
